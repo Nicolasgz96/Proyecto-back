@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="static/css/font-awesome.min.css" rel="stylesheet">
+  <link href="static/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="site-header sticky-top py-1 bg-dark">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
+      <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
+      <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
+      <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
+    </div>
+  </nav>
+  <main role="main">
+    <div class="container mt-5">
+      <div class="text-center p-4">
+        <h2>Información de los productos.</h2>
+        <p class="lead">Encontrarás aquí toda la información de los prductos seleccionados.</p>
+        <p class="small alert-warning py-3"><strong>Nota: </strong>por simplicidad, cualquiera sea la categoría
+          seleccionada previamente, siempre se visualizará la presente: <strong>Autos</strong>.</p>
+      </div>
+
+      <div id="imgAutos"></div>
+      <h3 id="categoryName"></h3>
+      <hr class="my-3">
+      <h4 id="categoryNamee"></h4>
+        <dt>Descripción:</dt>
+        <dd>
+          <p id="categoryDescription"></p>
+        </dd>
+
+        <dt>Precio:</dt>
+        <dd>
+          <p id="productCount"></p>
+        </dd>
+
+        <dt>Cantidad vendidos:</dt>
+        <dd>
+          <p id="productCriteria"></p>
+        </dd>
+        <dt class="outset">Imágenes ilustrativas</dt><br>
+        <dd>
+          <div class="productImagesGalleryy"  id="productImagesGallery">
+          </div> <br>
+        </dd>
+        <dt  class="outset">Productos relacionados:</dt> <br>
+        <dd>
+         <div class="row " id="productCriteriaa"></div>
+        </dd><br>
+        <dt class="outset">Caja de comentarios y puntuación:</dt>
+        <br>
+
+        <div id="infoAutos"></div>
+        <div id="container comentarios"></div> 
+
+        <br>
+        
+        <label type="text" id="nombre"></label><br>                          
+        <label type="text" id="apellido"></label><br>
+        <span  id="estrellas"></span><br>
+        <p class="align" id="fechas"></p>
+
+  <form action="" id="preguntaVendedor">
+    <hr class="mb-4">
+  <p id="textoPreguntas">A continuación puede dejar su comentario con su puntuación, para que puedan ver su recomendación.</p>
+     <br>
+     <input class="form-control" type="number" min="1" max="5" placeholder="Deje su puntuación del 1/5..." id="calificacion" required> <br>
+     <textarea name="mensaje" class="form-control" cols="50" id="mensajeEnviado" rows="" placeholder="Deje su comentario aquí..." required></textarea><br> 
+    <button type="submit" id="submitVendedor" class="btn btn-primary btn-lg" value="Enviar">Enviar</button>
+    <br>
+    <br>
+    <a type="button" class="btn btn-light btn-lg btn-block" href="index.html">Seguir Comprando</a>
+  </form>
+  </main>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a href="#">Volver arriba</a>
+      </p>
+      <!-- <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
+      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p> -->
+    </div>
+  </footer>
+
+  <div class="alert fade" role="alert" id="alertResult">
+    <span id="resultSpan"></span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+  <div id="spinner-wrapper">
+    <div class="lds-ring">
+    </div>
+  </div>
+  <script src="static/js/jquery-3.4.1.min.js"></script>
+  <script src="static/js/bootstrap.bundle.min.js"></script>
+  <script src="static/js/init.js"></script>
+  <script src="static/js/product-info.js"></script>
+</body>
+
+</html>
