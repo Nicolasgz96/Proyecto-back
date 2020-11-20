@@ -1,1 +1,8 @@
-Nombre y apellido: Nicolas Gonzalez, Dirección: 5555, Pais: uruguay, Tipo de Tarjeta: Tarjeta de credito, Numero de Tarjeta: 1234-1234-1234-1234, Numero de Seguridad: 123, Fecha Vencimiento: 01/20
+Nombre y apellido: Nicolas Gonzalez
+Dirección: Santamaria M37 S2
+Pais: uruguay
+Tipo de Tarjeta: Transferencia bancaria
+Numero de Tarjeta: undefined
+Numero de Seguridad: undefined
+Fecha Vencimiento: undefined
+Nuemro de cuenta: 123123123123

@@ -61,6 +61,8 @@ app.get("/my-profile.html", (req,res) => {
 
 });
 
+//Empiesa base de datos
+
 const bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({
@@ -84,23 +86,23 @@ app.use(express.urlencoded());
 app.use(express.json());
 
 // Access the parse results as request.body
-app.post('/', function(request, response){  
+app.post('/', function(req, res){  
 
-    fs.writeFileSync('./base_de_datos/datos.txt', "Nombre y apellido:" + " " + request.body.nombre + " " + request.body.apellido +"," + " " + 
-       "Dirección:" + " " + request.body.direccion +"," + " " + "Pais:" + " " + request.body.pais +"," + " " 
-            + "Tipo de Tarjeta:" + " " + request.body.tarjetabanco +"," + " " + "Numero de Tarjeta:" + " " + request.body.card +"," + " " + 
-                "Numero de Seguridad:" + " " + request.body.cardNumber +"," + " " +
-                    "Fecha Vencimiento:" + " " + request.body.month);
+    fs.writeFileSync('./base_de_datos/datos.txt', "Nombre y apellido: " + req.body.nombre + " " + req.body.apellido + "\r\n" + 
+         "Dirección: " + req.body.direccion + "\r\n" + "Pais: " + req.body.pais +"\r\n" 
+            + "Tipo de Tarjeta: " + req.body.tarjetabanco+ "\r\n"  + "Numero de Tarjeta: " + req.body.card + "\r\n" +
+                "Numero de Seguridad: " + req.body.cardNumber + "\r\n" +
+                    "Fecha Vencimiento: " + req.body.month + "\r\n" + "Nuemro de cuenta: " + req.body.banck);
 
-    console.log(request.body.nombre);
-    console.log(request.body.apellido);
-    console.log(request.body.direccion);
-    console.log(request.body.pais);
-    console.log(request.body.tarjetabanco);
-    console.log(request.body.card);
-    console.log(request.body.cardNumber);
-    console.log(request.body.month);
-    console.log(request.body.banck);   
+    console.log(req.body.nombre);
+    console.log(req.body.apellido);
+    console.log(req.body.direccion);
+    console.log(req.body.pais);
+    console.log(req.body.tarjetabanco);
+    console.log(req.body.card);
+    console.log(req.body.cardNumber);
+    console.log(req.body.month);
+    console.log(req.body.banck);   
     
 });
 
