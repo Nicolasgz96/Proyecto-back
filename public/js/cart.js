@@ -277,23 +277,23 @@ document.getElementById('transfer').addEventListener('input', function(){
 
 //---Para ver los datos en la URL Comente estas lineas------------------------
 
-getJSONData(CART_BUY_URL).then(function(resultObj) {
-    let msgToShowHTML = document.getElementById("resultSpan");
-    if (resultObj.status === "ok")
-    {
-        msg = resultObj.data.msg;
-        let infoMissing = false;//declaro un booleano
+// getJSONData(CART_BUY_URL).then(function(resultObj) {
+//     let msgToShowHTML = document.getElementById("resultSpan");
+//     if (resultObj.status === "ok")
+//     {
+//         msg = resultObj.data.msg;
+//         let infoMissing = false;//declaro un booleano
 
-        function getCarrito(e){//funcion para que valide si se envio el mensaje (e-mail)
-            if(!infoMissing){//si no estan vacios
-                e.preventDefault();
-                document.getElementById("alertResult").classList.add('alert-success');
-                document.getElementById("alertResult").classList.add("show");
-                msgToShowHTML.innerHTML = msg;
-             }
-        };
-        document.getElementById('carrito-msg').addEventListener('submit', getCarrito);//agrega un evento para el boton submit con la funcion de arriba
-    }
-});
+//         function getCarrito(e){//funcion para que valide si se envio el mensaje (e-mail)
+//             if(!infoMissing){//si no estan vacios
+//                 e.preventDefault();
+//                 document.getElementById("alertResult").classList.add('alert-success');
+//                 document.getElementById("alertResult").classList.add("show");
+//                 msgToShowHTML.innerHTML = msg;
+//              }
+//         };
+//         document.getElementById('carrito-msg').addEventListener('submit', getCarrito);//agrega un evento para el boton submit con la funcion de arriba
+//     }
+// });
 
 //------------------------Fin---------------------------------------------------

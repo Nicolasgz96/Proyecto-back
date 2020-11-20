@@ -1,12 +1,12 @@
-const CATEGORIES_URL = "http://localhost:3000/static/json/categories.json";
-const PUBLISH_PRODUCT_URL = "http://localhost:3000/static/json/publish_product.json";
-const CATEGORY_INFO_URL = "http://localhost:3000/static/json/category_info.json";
-const PRODUCTS_URL = "http://localhost:3000/static/json/products.json";
-const PRODUCT_INFO_URL = "http://localhost:3000/static/json/product_info.json";
-const PRODUCT_INFO_COMMENTS_URL = "http://localhost:3000/static/json/product_info_comments.json";
-const CART_INFO_URL = "http://localhost:3000/static/json/cart_info.json";
-const CART_BUY_URL = "http://localhost:3000/static/json/cart_buy.json";
-const CART_FULL_URL = "http://localhost:3000/static/json/cart_full.json";
+const CATEGORIES_URL = "http://localhost:3000/static/json/categories/categories.json";
+const PUBLISH_PRODUCT_URL = "http://localhost:3000/static/json/products/publish_product.json";
+const CATEGORY_INFO_URL = "http://localhost:3000/static/json/categories/category_info.json";
+const PRODUCTS_URL = "http://localhost:3000/static/json/products/products.json";
+const PRODUCT_INFO_URL = "http://localhost:3000/static/json/products/product_info.json";
+const PRODUCT_INFO_COMMENTS_URL = "http://localhost:3000/static/json/products/product_info_comments.json";
+const CART_INFO_URL = "http://localhost:3000/static/json/cart/cart_info.json";
+const CART_BUY_URL = "http://localhost:3000/static/json/cart/cart_buy.json";
+const CART_FULL_URL = "http://localhost:3000/static/json/cart/cart_full.json";
 
 var showSpinner = function(){
   document.getElementById("spinner-wrapper").style.display = "block";
