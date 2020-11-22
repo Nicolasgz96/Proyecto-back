@@ -286,10 +286,10 @@ getJSONData(CART_BUY_URL).then(function(resultObj) {
 
         function getCarrito(e){//funcion para que valide si se envio el mensaje (e-mail)
             if(!infoMissing){//si no estan vacios
-
                 document.getElementById("alertResult").classList.add('alert-success');
                 document.getElementById("alertResult").classList.add("show");
                 msgToShowHTML.innerHTML = msg;
+                $('#carrito-msg').modal('hide')
              }
         };
         document.getElementById('carrito-msg').addEventListener('submit', getCarrito);//agrega un evento para el boton submit con la funcion de arriba
@@ -297,3 +297,4 @@ getJSONData(CART_BUY_URL).then(function(resultObj) {
 });
 
 //------------------------Fin---------------------------------------------------
+

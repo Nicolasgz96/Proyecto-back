@@ -70,6 +70,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 const fs = require('fs');
+const { json } = require('express');
 
 fs.writeFile("./base_de_datos/datos.txt", "Base de datos!", function(err) {
     if(err) {
@@ -102,7 +103,8 @@ app.post('/', function(req, res){
     console.log(req.body.card);
     console.log(req.body.cardNumber);
     console.log(req.body.month);
-    console.log(req.body.banck);   
+    console.log(req.body.banck);  
+    console.log(res.json.porcentajeTotal); 
     
 });
 
