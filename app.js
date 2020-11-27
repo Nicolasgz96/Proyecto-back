@@ -10,6 +10,12 @@ console.log("El servidor esta funcionando en Localhost:" + port);
 
 app.use('/static', express.static('public'));
 
+app.use(express.urlencoded());
+
+// Parse JSON bodies (as sent by API clients)
+app.use(express.json());
+
+
 app.get("/", (req, res) => {
     res.sendFile("./views/index.html", {root: __dirname});
     
@@ -45,7 +51,6 @@ app.get("/product-info.html", (req,res) => {
 
 });
 
-
 app.get("/sell.html", (req,res) => {
     res.sendFile("./views/sell.html", {root: __dirname});
 
@@ -63,14 +68,7 @@ app.get("/my-profile.html", (req,res) => {
 
 //Empiesa base de datos
 
-const bodyParser = require("body-parser");
-
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
-
 const fs = require('fs');
-const { json } = require('express');
 
 fs.writeFile("./base_de_datos/datos.txt", "Base de datos!", function(err) {
     if(err) {
@@ -78,13 +76,6 @@ fs.writeFile("./base_de_datos/datos.txt", "Base de datos!", function(err) {
     }
     console.log("Se guardo la base de datos con exito!");
 }); 
-
-
-
-app.use(express.urlencoded());
-
-// Parse JSON bodies (as sent by API clients)
-app.use(express.json());
 
 // Access the parse results as request.body
 app.post('/', function(req, res){  
@@ -104,7 +95,6 @@ app.post('/', function(req, res){
     console.log(req.body.cardNumber);
     console.log(req.body.month);
     console.log(req.body.banck);  
-    console.log(res.json.porcentajeTotal); 
     
 });
 

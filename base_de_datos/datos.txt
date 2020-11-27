@@ -1,1 +1,8 @@
-Base de datos!
+Nombre y apellido: Nicolas Gonzalez
+Dirección: Santamaria M37 S2
+Pais: uruguay
+Tipo de Tarjeta: Transferencia bancaria
+Numero de Tarjeta: undefined
+Numero de Seguridad: undefined
+Fecha Vencimiento: undefined
+Nuemro de cuenta: 123123123123
